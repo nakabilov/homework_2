@@ -1,135 +1,203 @@
-// // ================= task 1
-// let a = 5;
-// b = prompt('У квадратного стола отпилили один угол. Сколько теперь углов у него стало?');
-// ================= task 2
-// if (a > b || a < b ){
-//     console.log('Неверно');
-// }else {
-//     console.log('Верно');
+// Задание 1 ==========================================================
+// const yodaSays = ["on JavaScript", "programming ", "I like "];
+// yodaSays.reverse();
+// alert(yodaSays);
+// Задание 2 ==========================================================
+
+// let login = prompt('Введите логин ?');
+// if (login == 'admin') {
+//     let pass = prompt('Введите пароль ?')
+//     if (pass == 'BlackOverlord') {
+//         alert('Welcome!');
+//     }
+//     else if (pass == null){
+//         alert('Login canceled');
+//     }else {
+//         alert('Wrong passsword');
+//     }
+
+// } else if ((login == null) || (login == '')) {
+//     alert('Login canceled !');
+// } else {
+//     alert('Unknown user');
 // }
-// ================= task 2
-// let child = 1;
-// let teenager = 13;
-// let adult = 18;
-// let age = prompt('How old are you?');
+// Задание 3 ==========================================================
+// const drinks = ['milk', 'beer', 'beer', 'milk', 'milk'];
+// for (let i = 0; i < drinks.length; i++ ) {
 
-// if ((child <= age) && (age <= teenager)) {
-//     console.log(age, ' , MickeyMouse')
-// }else if ((age > teenager) && (age < adult)) {
-//     console.log(age, ' , Marvel');
-// }else if (age >= adult){
-//     console.log(age, ' Astral');
-// }else {
-//     console.log(age, ' error!');
+//     // console.log(drinks[i]);
+
+//     if (drinks[i] === 'milk'){
+    
+//         // alert(drinks);
+//         console.log(drinks[i] = 'good');
+//     }else if (drinks[i] === 'beer')
+//     {
+//        console.log(drinks[i] = 'bad');
+//     }
+    
 // }
-// ========================= task 3
+// console.log(drinks);
+// Задание 4 ==========================================================
+// let symbol = prompt('Введите символ ?');
+// let triangle = '';
+// for (i = 1; i <= 7; i++){
+//     for(j = 1; j <= 20; j++){
+//         triangle += symbol;
+//     }
+//     triangle += '\n';
+// }
+// alert(triangle);
+// Задание 5 ==========================================================
 
-//  let drinkLove = prompt('Your favorite drink ?');
-//  switch (drinkLove) {
-//     case  'beer' : 
-//     case  'vodka' : 
-//     case  'whisky' : 
-//         console.log('Алкоголь оказывает токсическое действие на нервную систему – мозг, а также происходит ухудшение зрения, речи и нарушается координация движений. ');
-//         break;
-//     case  'coffee' : 
-//         console.log('В больших количествах кофеин может вызвать возбуждение, тревогу, тремор, учащенное сердцебиение, повышение давления.');
-//         break;
-//     case 'water' :
-//         console.log('Отлично: Польза воды для организма человека неоценима.');
-//         break;
-//     default:
-//         console.log('Класно!');
-//         break;
-//  }
-// ========================= task 4
+// let second = prompt('Сколько секунд осталось ?');
+// const hours = 3600;
+// if (second / hours >= 8) {
+//     alert('Осталось 8 часов');
+// } else if (second / hours >= 7){
+//     alert('Осталось 7 часов');
+// }else if (second / hours >= 6){
+//     alert('Осталось 6 часов');
+// }else if (second / hours >= 5){
+//     alert('Осталось 5 часов');
+// }else if (second / hours >= 4){
+//     alert('Осталось 4 часов');
+// }else if (second / hours >= 3){
+//     alert('Осталось 3 часов');
+// }else if (second / hours >= 2){
+//     alert('Осталось 2 часов');
+// }else if (second / hours >= 1){
+//     alert('Осталось 1 часов');
+// }else if (second / hours < 1 ){
+//     alert('Осталось менее часов');
+// }else {
+//     alert('Такое значение не должно быть')
+// }
+// Задание 6 ==========================================================
 
-// let number = 10;
-// //  if (number = 11)  ошибка в том что оператор ' = ' он присваивает обратно на 11
-// if (number == 11)  // а этот оператор сравнивает значания чтобы код работал корректно
+// function randomInteger(min, max) {
+//     // случайное число от min до (max+1)
+//     let rand = min + Math.random() * (max + 1 - min);
+//     return Math.floor(rand);
+//   }
+  
+
+
+
+// function randomInt(min, max) {
+//     // случайное число от min до (max+1)
+//     let rand = min + Math.random() * (max + 1 - min);
+//     return Math.floor(rand);
+//   }
+  
+// console.log( randomInt(1, 9));
+// console.log(randomInteger(1, 9));
+
+// const firstNumber = randomInt(1, 9);
+// const secondNumber = randomInteger(1, 9)
+// let result = prompt(`Сколько будет ${firstNumber} * ${secondNumber}`)
+// if (result == firstNumber * secondNumber){
+//     alert('You are correct!')
+// }else {
+//     alert('You are wrong ')
+// }
+// Доп.Задание  
+
+// const firstNumber = prompt('Первое число');
+// const secondNumber = prompt('Второе число');
+// if (firstNumber > secondNumber){
+//     alert('Первое число больше второго');
+// }else if (firstNumber < secondNumber){
+//     alert('Второе число больше первого');
+// }else {
+//     alert('Равны')
+// }
+//2. Упражнение "Сообщение в рамочке" ==========================================================
+// let message = prompt('Напишите сообщение');
+
+
+// let symbol = ''
+// for (let i = 0; i < message.length + 4; i++) {
+//     symbol = symbol + '*'
+// }
+
+// console.log(symbol);
+
+// console.log(`* ${message} *`);
+
+// console.log(symbol);
+//3. Упражнение "Количество жизни" ==========================================================
+// 3. Упражнение "Количество жизни"
+// Необходимо написать программу, которая отобразит пользователю по количеству полных лет, сколько месяцев, дней, минут и секунд он прожил.
+
+// Указания:
+// Можно предположить, что в году 365 дней. 
+// Дополнительное задание: приблизительно учесть високосные годы, учитывая, что он бывает 1 раз за 4 года.
+
+
+
+
+//4 Упражнение "Среднее арифметическое" ==========================================================
+// Создать программу, которая бесконечно спрашивает у пользователя целое число от 1 до 100. Если пользователь вводит не число, пустую строку или не попадающее в критерий число, нужно спросить пользователя заново. Если пользователь нажимает "Отмена", необходимо вывести на экран количество введенных чисел и их среднее арифметическое.
+// let sum = 0;
+// let k = 0;
+
+// let number = parseInt(prompt('Введите число: '));
+
+// while (number >= 1 && number <= 100) {
+  
+//     sum += number;
+//     k++;
+//     number = parseInt(prompt('Введите число: '));
+// }
+
+// // вывод суммы
+// console.log(`Cреднее арифметическое: ${sum/2}.\n Количество введенных чисел ${k}`);
+
+// Создать программу, которая бесконечно спрашивает у пользователя целое число от 1 до 100. Если пользователь вводит не число, пустую строку или не попадающее в критерий число, нужно спросить пользователя заново. Если пользователь нажимает "Отмена", необходимо вывести на экран количество введенных чисел и их среднее арифметическое.
+
+// let number = prompt('Введите число');
+// let result = 0;
+// if(isNaN(number) || number == '' || (number < 1 || number > 100))
 // {
-//      alert('Number is 11!');
-//  } else {
-//      alert('Number is 10!');
-//  }
+//     for(let i = 0; i < 5; i++){
+//         number = prompt('Введите число');
+//         if (isNaN(number) || number == '' || (number < 1 || number > 100)){
+//             console.log('rrr');
+//         }
+//         else if (number === null){
+//            console.log(result);
+//            break;
+//         }
+//         else {
+//             result += number;
+//         }
 
-// ========================= task 5
-
-// 1.(2 < 3) && (3 > 4) || true
-// 2.true && false || true
-// 3.false || true
-// 4.true
-
-// 1.!true && (!true || 100 != 5 * 5)
-// 2.false && false || true
-// 3.false || true 
-// 4.true
-// 1.("123" == 123) || ((10 <= 10) && ('' === false))
-// 2.false || true && false
-// 3.false || false
-// 4.false
-
-// ========================= task 6
-// isRaining = true;
-// isSunny = false;
-
-// isRaining = true;
-// isSunny = true;
-// let result = isRaining && isSunny;
-// if (isRaining && isSunny) {
-//     console.log(result);
-// }else if (isRaining || isSunny){
-//     console.log(result);
-// }
-// ========================= task 7
-// let numberAsString = '42';
-// const numberFourty = parseInt(numberAsString);
-// let numberTen = 10;
-// result = console.log(numberFourty + numberTen);
-// ========================= task 8
-// let ageLine = 18;
-// const age = parseInt(prompt('Сколько вам лет ?'));
-// if (age >= ageLine) {
-//     alert(`Поздравляем, Тебе ${age} лет !`)
+//         // if ((number !== null) || (number !== '')){
+//         //     result += number;
+//         // }else {
+//         //     alert(result);
+//         // }
+        
+//     }
 // }else {
-//     alert(`Не допуск, Тебе ${age} лет !`)
+//     alert('no');
 // }
-// ========================= task 9
-// const isWeekend = false;
-// const hasTimeOff = true;
-// let result = hasTimeOff;
-// if(result) {
-//     alert('У вас есть выходные и вы можете отдохнуть!')
-// }else {
-//     alert('Жаль надо работать !')
-// }
-// ========================= task 10
-//  const pass = 'MySecretPassword123';
-// if (pass.length && pass[0] === pass[0].toLocaleUpperCase() && (/\d/.test(pass) )) {
-//     console.log('Пароль допустим');
-// }else {
-//     console.log('Пароль недопустим');
-// }
-// ========================= task 11
-// const studentGrade = prompt ('Оценка за экзамен')
 
-// if (studentGrade >= 90) {
-//     alert ('Отлично !');
+// let string = prompt('введите цифр ');
 
-// } else if (studentGrade >= 70 && studentGrade < 90) {
-//     alert ('Хорошо !');
 
-// }else if (studentGrade < 70) {
-//     alert('Попробуйте еще раз !')
-// }   
-//  else  {
-//     alert ('Неправильная оценка !');
+// if (string.length % 2 == 0){
+
+//     alert('yes');
+
+// }else{
+//     alert('no');
 // }
-// ========================= task 12
-// let currentDate = new Date('2023-09-01');
-// let date = prompt('Напишите дату')
-// if (currentDate >= date) {
-//     alert('Добро пожаловать!')
-// }else {
-//     alert('Скоро начнем')
-// }
+
+
+// let string = '4444';
+
+// if(string.length % 2)
+
 
